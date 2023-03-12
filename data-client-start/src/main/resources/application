@@ -1,0 +1,11 @@
+server.port=8080
+server.servlet.context-path=/data-client
+spring.application.name=data-client
+#-----------------consul配置-----------------------------
+spring.cloud.consul.host=127.0.0.1
+spring.cloud.consul.port=8500
+spring.cloud.consul.discovery.preferIpAddress=true
+spring.cloud.consul.discovery.ip-address=127.0.0.1
+spring.cloud.consul.discovery.health-check-path=${server.servlet.context-path}/health/check
+spring.cloud.consul.discovery.health-check-interval=15s
+#-----------------consul配置-----------------------------s
